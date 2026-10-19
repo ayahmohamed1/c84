@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowerIntro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--paper);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.singleImage {
+  position: absolute;
+  width: 250px;
+  opacity: 0.95;
+  will-change: transform, opacity;
+}
+
+/* تعديل المربع ليكون بدون خلفية زي الصورة */
+.contentBox {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuteIcon {
+  margin-bottom: 0.5rem;
+}
+
+.textGroup {
+  margin-bottom: 1.5rem;
+}
+
+/* كلمة Hello باللون الغامق */
+.helloText {
+  font-family: var(--font-hand);
+  font-size: 3.5rem;
+  color: var(--text);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+/* كلمة My Love باللون الأحمر */
+.loveText {
+  font-family: var(--font-hand);
+  font-size: 4.5rem;
+  color: var(--red);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+/* السؤال بخط أصغر ولون أهدى */
+.question {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
